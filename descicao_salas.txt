@@ -1,0 +1,103 @@
+﻿Destruição, fogo e escombros... Memórias perdidas em meio ao despertar pós-batalha. Sua cidade está em ruínas e não há ninguém por perto.
+
+{ruaIni => Você acorda desorientado. Seu instinto de Cavaleiro lhe proporciona duas opções: Seguir para o Castelo ou dirigir-se à floresta.}
+
+{rua => Você chega à rua onde despertou. É possível dirigir-se ao Castelo ou à floresta.}
+
+{castelo => Você se aproxima da fachada do Castelo. É possível ver que uma das torres foi completamente destruída e há fumaça escapando pelas fendas visíveis após a destruição. 
+Não há guardas e nenhum ser visível. Seu instinto lhe indica duas possibilidades: O Hall de Entrada ou o Pátio do Castelo.}
+
+{hall => O odor da morte é o primeiro a atingir seus sentidos. A visão do ambiente é desoladora. É possível ver alguns de seus companheiros, cavaleiros assim como você, ou o que sobrou de seus 
+corpos...
+Você percebe que alguns dos corpos são grotescos e monstruosos. A cena acaba por abalar seu espírito por um momento e você deve decidir o que fazer: Dirigir-se à sala do Trono, verificar a 
+Torre de Vigia ou voltar para a entrada do Castelo.}
+
+{sala do trono => A primeira visão é do Trono... O brilho escarlate atinge seus olhos graças à luz que entra no ambiente destruído e você observa o semblante vazio de vida do Rei.
+Os sinais de batalha são menos evidentes aqui. Não há sinal da Princesa nesse cômodo. A fúria domina seus sentimentos e você decide o que fazer em seguida: Investigar a sala ou voltar ao Hall.}
+
+{INVESTIGAÇÃO 1: Ao investigar o falecido Rei, você observa que apesar dos ferimentos superficiais, seu corpo possui grotescas marcas de queimadura. Algo tão potente que foi capaz de derreter
+sua coroa dourada. Nesse instante, você compreende que isso não poderia ser causada por uma chama normal, mas alguma poderosa magia.}
+
+{patio => Não há sinal de vida por aqui. Mais companheiros podem ser encontrados e todos sofreram um fim terrível pela expressão em seus rostos. O medo e desespero ainda são visíveis na frieza
+de seus olhos. Você observa a Torre a uma certa distância. Neste momento decide se volta a Fachada do Castelo ou se vai em direção à Torre de Vigia.}
+
+{torre de vigia => O ambiente vazio apenas proporciona uma visão da floresta, cujas árvores também cederam. Não há muito para se encontrar neste local. Você decide investigar outro local: Hall
+ou Pátio.}
+
+{floresta => O silêncio é interrompido com o som inconfundível de criaturas vis e impuras. 3 Goblins se aproximam de você com armas em posição. O mais alto grunhe em uma 
+linguagem incompreensível e você logo percebe que a batalha é iminente. Você decide então que atacar é a melhor estratégia: Atacar em arco, Atacar de cima para baixo ou Atacar com uma estocada.}
+
+{BATALHA 1: 
+*Ataque em arco: Você avança para cima dos Goblins em um ataque repentino, fruto de anos de treinamento. A lâmina rasga o peito do Goblin mais à esquerda, que agoniza e cai de joelhos sem vida.
+O Goblin à direita tenta evitar o ataque posicionando sua adaga numa tentativa desesperada de interromper o poderoso ataque. Sua lâmina, contudo, atravessa a frágil adaga e separa corpo de ca-
+beça da vil criatura. O inimigo restante consegue saltar para trás no momento do ataque apenas para ver seus aliados serem destruídos em apenas um golpe e com desespero, foge floresta adentro.
+
+*Ataque de cima para baixo: Você levanta sua espada e desce em um movimento rápido e poderoso dividindo em dois o Goblin posicionado mais à esquerda do grupo. Contudo você percebe que a lâmina
+acaba ficando presa no corpo sem vida do inimigo. Percebendo sua falha, um dos Goblins corre em sua direção e investe a lâmina da adaga logo abaixo de seu braço direito e nesse instante você
+solta a espada. O Goblin restante então, profere um último grunhido e salta em sua direção apunhalando seu rosto com a pequena lâmina. Ambas criaturas começam a pular sobre seu corpo fincando
+adagas em seu peito, pernas, olhos, pescoço e você sente a vida se esvaindo de seu corpo. Até que a luz se esvai de seus olhos...
+
+*Estocada: Você se adiantaem direção ao grupo de inimigos e com uma poderosa estocada atinge o peito do Goblin do meio. Ele sorri e você observa então a desproporcionalidade do equipamento das
+criaturas. A repulsa invade seu olhar ao perceber que aquelas criaturas impuras roubaram todo o possível dos corpos dos soldados do Castelo. Ainda que muito desproporcional, o Goblin do meio,
+equipava-se com uma das cotas de malha revestidas de aço, muito usadas pelos soldados reais. Aproveitando sua falha, o Goblin à direita investe a lâmina de sua adaga em seu pescoço enquanto
+aquele à sua esquerda corta seu calcanhar direito. Acostumados a inimigos maiores, os Goblins sabe muito bem como derrubar um soldado quando estão em maior número. Cercado de inimigos, você
+sucumbe ao frio chamado da morte enquanto ouve o mar de guinchos e gargalhadas das criaturas malignas.
+}
+
+{floresta2 => Após ser possível apenas ouvir os passos apressados do Goblin fugitivo, você observa sinais incomuns que indicam que algo atravessou a floresta naquela direção. Além disso, é 
+possível ver que a estrada principal apresenta rastros interessantes ao longo de sua extensão visível. Você decide então, seguir por um dos caminhos: Estrada ou Mata adentro.}
+
+{estrada => Na clareira, é possível ver um penhasco. A ponte foi destruída, impossibilitando a passagem. Seus instintos são fortes em relação àquele local.
+É possível sentir que o penhasco talvez possa prover pistas sobre o que atacou o Castelo e quais inimigos você poderá encontrar. Você pode investigar os restos da ponte,
+observar o penhasco ou voltar para a entrada da Floresta.}
+
+{INVESTIGAÇÃO 2: Você se aproxima da ponte e recorda-se de que um antigo Mago, implacável, havia auxiliado o Rei na construção daquela ponte, que proveu o caminho mais rápido para as terras
+do reino vizinho em caso de perigo. Assim como fez com o castelo, o Mago alertou a todos que apenas uma magia antiga e digna de um ser ou criatura muito poderoso poderia destruir aquilo que
+ele havia criado.}
+
+{olhar penhasco => Você se aproxima do penhasco e observa a queda íngreme e o vazio escuro que praticamente emana de seu fundo. Perdido em seus pensamentos, você não percebe a instabilidade 
+do terreno. A terra cede e você cai no abismo da morte, para nunca mais ser visto novamente.
+
+{mata adentro => Adentrando na Floresta você caminha por alguns minutos até que o odor da morte toma seus sentidos novamente. Dezenas de corpos, alguns sem vida há muitos anos e outros cujo
+terror e desespero no olhar ainda dão a sensação de que acabaram de perder o brilho da vida, estão espalhados e desfigurados próximos a entrada da caverna. Você tem uma decisão a tomar: Entrar
+ou voltar para a entrada da Floresta.}
+
+{caverna => A caverna é escura e úmida. Ao adentrar naquele ambiente você sente uma presença inigualável. Logo observa que a caverna se divide em uma bifurcação. O caminho da direita aparenta
+ser mais escuro e sombrio. A passagem para a esquerda parece possuir uma precária iluminação ao fundo. Seu instinto está em chamas e sua razão deve prevalescer nesta descisão. Você decide ir 
+para um dos caminhos: Esquerda ou Direita.}
+
+{esquerda => A passagem o leva até uma câmara imensa. O teto é escuro e impossível de se enxergar. Luz se esgueira de uma pequena tocha no fundo da caverna e seus olhos brilham ao encontrarem
+a Princesa, desvanecida, sobre algo que aparenta ser uma mesa feita de rocha, algo como um altar de sacrifícios. Contudo, a felicidade dura poucos instantes... Entre a Princesa e você é possível
+ver uma criatura dantesca... Seu corpo robusto se alonga em uma cauda enorme e coberta de adornos que mais se parecem com espinhos. Seu corpo escamado brilha com a luz tremeluzente da tocha.
+Grandes asas são projetadas de suas costas e as patas imensas terminam em longas garras mais afiadas que qualquer lâmina feita pelo homem. A cabeça do monstro está inclinada sobre as patas e
+seus olhos permanecem fechados enquanto uma pesada respiração enche a sala com o terror daquela visão. O Dragão permanece em seu sono e você precisa decidir o que fazer antes que ele desperte.
+Você pode atacá-lo enquanto dorme num ataque surpresa, pode espreitar-se e tentar resgatar a Princesa furtivamente ou pode deixar aquele local e voltar para o cômodo anterior da caverna.}
+
+{atacar =>  Você entende que é seu dever vingar-se do Rei e de seus companheiros. A besta infernal deve pagar por toda a destruição causada e sua morte é uma moeda válida. Você empunha sua
+espada e avança para um ataque mortal e definitivo na garganta do Dragão e com toda sua força desce a lâmina em seu pescoço. A espada acerta o Dragão apenas para ser destruída pelas poderosas
+escamas do Dragão. Este desperta de seu sono, incomodado por uma ínfima criatura. O monstro levanta seu corpanzil imenso e seu olhar sombrio encontra o causador do incômodo. A sala se ilumina 
+com as chamas vermelho-alaranjadas expelidas pelo Dragão e seu corpo, assim como a fraca tocha daquela câmara, queima por um breve momento e por fim se apaga, devolvendo aquele lugar às trevas.}
+
+{espreitar => Você se aproxima do corpo da criatura gigantesca e com passos cuidadosos você consegue se aproximar da Princesa. Ao chegar ao seu alcance, você a segura e tenta erguê-la nos seus
+ombros para que possa carregá-la para forada caverna. Nesse momento, o Dragão desperta e você está absolutamente indefeso carregando a jovem realeza. A criatura observa com desprezo sua tenta-
+tiva pífia de recuperar seu precioso prêmio. Ele ruge de modo que toda a caverna estremece. Só é possível vê-lo movimentar a cauda e, com o medo e o arrependimento de sua escolha sobre os
+ombros, você aguarda o golpe de misericórdia. A impotência e o terror dominam seu corpo e no momento do impacto, seu corpo e o da Princesa unem-se em uma massa indistinguível de carne
+e ossos.}
+
+{direita => O caminho escuro acaba direcionando você para cima, em uma subida suave e sombria. Você observa que está em um nível relativamente mais alto naquela câmara e daquele local consegue
+observar uma pequena luz fraca de uma tocha no fundo daquele local. Sobre algum tipo de altar de sacrifícios você vê uma nova esperança. A Princesa está aparentemente desmaiada sobre a mesa
+rochosa como que a espera de alguém bravo e poderoso o suficiente para salvá-la. Abaixo do local onde você está, uma gigantesca criatura respira pesadamente em um sono visivelmente profundo. 
+Seu corpo robusto se alonga em uma cauda enorme e coberta de adornos que mais se parecem com espinhos. Seu corpo escamado brilha com a tremeluzente iluminação da tocha. Grandes asas são 
+projetadas de suas costas e as patas imensas terminam em longas garras mais afiadas que qualquer lâmina feita pelo homem. A cabeça do monstro está inclinada sobre as patas e seus olhos 
+permanecem ocultos sobre as pálpebras. Após observar a sala e sua localização sobre o Dragão, você precisa tomar uma decisão: Atacar o Dragão por cima ou Voltar à bifurcação da caverna.}
+
+{golpe por cima => Todo o ódio, fúria e tristeza pelos companheiros perdidos, Rei assassinado e Reino desolado caem sobre suas costas. Você entende a necessidade daquele ato e vê que aquela
+criatura causou muito mal não só a você, mas também a centenas de pessoas. O Dragão precisa ser eliminado. Você empunha sua espada e compreende seu peso de uma maneira que nunca compreendera
+antes. Olhando para aquela arma você pede um sinal aos deuses para ter certeza de que aquela era sua missão e se teria forças para lutar até o fim. Por um breve momento, a lâmina brilha de
+maneira surpreendente. Você não tem certeza se foi apenas um reflexo da luz da tocha, mas sente que aquele é o momento. Com a espada em mãos você finalmente salta daquela superfície mais alta.
+Tudo que se ouve é um som incomparável, algo como um urro violento de dor. Sua espada atravessa a cabeça do Dragão e ele urra de dor. Preso ao chão a besta tenta se mover, mas com um último
+brilho de chamas de sua boca cerrada pela espada que atravessa sua cabeça, o monstro fica imóvel e a vida sombria se esvai de seus olhos. Você retira a espada, cuja lâmina brilha escarlate 
+graças ao fogo de Dragão e se direciona à Princesa. Com o som da batalha, a Princesa acorda assustada. Seus olhos buscam explicação e conforto, até que encontram o olhar de seu salvador.}
+
+Juntos, você a Princesa dirigem-se a saída da caverna e às ruínas do Castelo. A Princesa, única sobrevivente da família real, torna-se Rainha daquelas terras e você, seu Chefe da Guarda Real.
+Também conhecido como o Poderoso Matador de Dragões.

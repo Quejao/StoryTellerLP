@@ -1,0 +1,33 @@
+
+<head>
+    <title>RPG</title>
+    <script type="text/javascript">
+        function mostrarValor() {
+            alert(document.getElementById("meu-input").value);
+        }
+
+// Evento que é executado toda vez que uma tecla for pressionada no input
+        document.getElementById("meu-input").onkeypress = function (e) {
+            // 13 é a tecla <ENTER>. Se ela for pressionada, mostrar o valor
+            if (e.keyCode === 13) {
+                mostrarValor();
+                e.preventDefault();
+            }
+        };
+
+// Evento que é executado ao clicar no botão de enviar
+        document.getElementById("meu-submit").onclick = function (e) {
+            mostrarValor();
+            e.preventDefault();
+        };
+    </script>
+</head>
+
+<body>
+    <!--<script type="text/javascript" src="scripts/areas.js"></script>-->
+    <form method="get">
+        <input type="text" id="meu-input" />
+        <input type="submit" id="meu-submit" value="Enviar" />
+    </form>
+    <object data="sons/musica.mp3" type="audio/x-mp3" autostart="true" width="0px" height="0px"></object>
+</body>
