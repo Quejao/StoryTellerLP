@@ -14,7 +14,7 @@ Element.prototype.writeln = function(arg) {
 }
 
 function Print(area) {
-    jogoDiv.writeln(area.descricao + "<br>");
+    jogoDiv.writeln(area.descricao + "<br><br>");
     var i = 0;
     strCampo = 'campo_' + k;
     while (i < area.opcoes.length) {
@@ -48,7 +48,7 @@ function Escolha(area, op) {
 var jogoDiv = document.getElementById('jogo');
 var k = 1;
 var strCampo;
-var flag = true;
+var flag = false;
 
 //criação das salas
 {
@@ -56,11 +56,11 @@ var flag = true;
     {
         var ruaIni = new Area(
                 "*Você acorda desorientado, na rua principal da cidade.\n\
-                Você se levanta do chão com dificuldade e olha os possíveis caminhos a se seguir. \n\
-                Seguindo rua à cima está o castelo e rua à baixo está a floresta.",
+                Você se levanta do chão com dificuldade. Como cavaleiro que é, você precisa descobrir o que \n\
+                aconteceu. Subindo a rua está o castelo, descendo-a está a floresta.",
                 [
-                    new Opcao("1)Seguir para o Castelo", "Você se direciona para o castelo...", "castelo"),
-                    new Opcao("2)Dirigir-se à floresta", "Você vai em direção à floresta...", "floresta")
+                    new Opcao("1)Seguir para o Castelo", "Você pega sua espada e escudo e direciona-se para o castelo...", "castelo"),
+                    new Opcao("2)Dirigir-se à floresta", "Você pega sua espada e escudo e vai em direção à floresta...", "floresta")
                 ]
                 );
     }
@@ -171,7 +171,7 @@ var flag = true;
                 A lâmina rasga o peito do Goblin mais à esquerda, que agoniza e cai de joelhos sem vida. O Goblin à direita tenta evitar o ataque posicionando \n\
                 sua adaga numa tentativa desesperada de interromper o poderoso ataque. Sua lâmina, contudo, atravessa a frágil adaga e separa corpo \n\
                 de ca- beça da vil criatura. O inimigo restante consegue saltar para trás no momento do ataque apenas para ver seus aliados serem \n\
-                destruídos em apenas um golpe e com desespero, foge floresta adentro...", "arco")
+                destruídos em apenas um golpe e com desespero, foge floresta adentro...", "floresta2")
                 ]
                 );
     }
@@ -393,9 +393,9 @@ var flag = true;
 //derrota
     {
         var derrota = new Area(
-                "<br><br>Fim de jogo!",
+                "Fim de jogo!",
                 [
-                    new Opcao("1)Recomeçar?", "", "Recarregar")
+                    new Opcao("1)Recomeçar?", "", "ruaIni")
                 ]
                 );
     }
@@ -406,7 +406,7 @@ var flag = true;
                 única sobrevivente da família real, torna-se Rainha daquelas terras e você, seu Chefe da Guarda Real. \n\
                 Também conhecido como o Poderoso Matador de Dragões.<br><br>Parabéns, você terminou o jogo!",
                 [
-                    new Opcao("1)Recomeçar?", "", "Recarregar")
+                    new Opcao("1)Recomeçar?", "", "ruaIni")
                 ]
                 );
     }
@@ -423,7 +423,7 @@ var flag = true;
     areas['trono'] = trono;
     areas['torre'] = torre;
     areas['floresta'] = floresta;
-    areas['arco'] = floresta2;
+    areas['floresta2'] = floresta2;
     areas['clareira'] = clareira;
     areas['mata'] = mata;
     areas['caverna'] = caverna;
@@ -440,6 +440,6 @@ var flag = true;
 {
     salaAtual = 'ruaIni';
     jogoDiv.writeln("Destruição, fogo e escombros...<br>Memórias perdidas em meio ao \n\
-        despertar pós-batalha. Sua cidade está em ruínas e não há ninguém por perto." + "<br>");
+        despertar pós-batalha. Sua cidade está em ruínas e não há ninguém por perto." + "<br><br>");
     Print(areas[salaAtual]);
 }
