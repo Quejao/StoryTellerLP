@@ -9,7 +9,7 @@ function Opcao(opcao, resultado, chave) {
     this.chave = chave;
 }
 
-Element.prototype.writeln = function(arg) {
+Element.prototype.writeln = function (arg) {
     this.innerHTML += arg;
 }
 
@@ -40,8 +40,31 @@ function Escolha(area, op) {
         return;
     }
     op--;
+
+    //recomeça o jogo
+    if (area.opcoes[op].chave === "refresh") {
+        location.reload();
+    }
     jogoDiv.writeln("<br>" + area.opcoes[op].resultado + "<br><br>");
     salaAtual = area.opcoes[op].chave;
+
+    //controle das musicas
+    {
+        if (salaAtual === 'batalha1') {
+            document.getElementById('musica1').muted = true;
+            document.getElementById('musica2').autoplay = true;
+        }
+        if (salaAtual === 'vitoria') {
+            document.getElementById('musica1').muted = true;
+            document.getElementById('musica2').autoplay = true;
+            document.getElementById('musica2').muted = true;
+        }
+        if (salaAtual === 'derrota') {
+            document.getElementById('musica1').muted = true;
+            document.getElementById('musica2').autoplay = true;
+            document.getElementById('musica2').muted = true;
+        }
+    }
     Print(areas[salaAtual]);
 }
 
@@ -52,10 +75,13 @@ var flag = false;
 
 //criação das salas
 {
-//rua de inicio do jogo
+
+    //rua de inicio do jogo
     {
         var ruaIni = new Area(
-                "*Você acorda desorientado, na rua principal da cidade.\n\
+                "Destruição, fogo e escombros...<br>Memórias perdidas em meio ao \n\
+                despertar pós-batalha. Sua cidade está em ruínas e não há ninguém por perto. \n\
+                <br><br>*Você acorda desorientado, na rua principal da cidade.\n\
                 Você se levanta do chão com dificuldade. Como cavaleiro que é, você precisa descobrir o que \n\
                 aconteceu. Subindo a rua está o castelo, descendo-a está a floresta.",
                 [
@@ -64,7 +90,8 @@ var flag = false;
                 ]
                 );
     }
-//mesma rua do inicio, com uma descrição diferente para não dar uma sensação estranha
+
+    //mesma rua do inicio, com uma descrição diferente para não dar uma sensação estranha
     {
         var rua = new Area(
                 "*Você chega à rua onde despertou. É possível dirigir-se ao Castelo ou à floresta.",
@@ -74,7 +101,8 @@ var flag = false;
                 ]
                 );
     }
-//castelo
+
+    //castelo
     {
         var castelo = new Area(
                 "*Aproximando-se da fachada do Castelo \n\
@@ -89,7 +117,8 @@ var flag = false;
                 ]
                 );
     }
-//hall do castelo
+
+    //hall do castelo
     {
         var hall = new Area(
                 "*O odor da morte é o primeiro a atingir seus sentidos. A visão do ambiente é desoladora. \n\
@@ -104,7 +133,8 @@ var flag = false;
                 ]
                 );
     }
-//sala do trono
+
+    //sala do trono
     {
         var trono = new Area(
                 "*A primeira visão é do Trono... O brilho escarlate atinge seus olhos graças à luz que \n\
@@ -121,7 +151,8 @@ var flag = false;
                 ]
                 );
     }
-//torre de vigia
+
+    //torre de vigia
     {
         var torre = new Area(
                 "*O ambiente vazio apenas proporciona uma visão da floresta, cujas árvores \n\
@@ -132,7 +163,8 @@ var flag = false;
                 ]
                 );
     }
-//patio do castelo
+
+    //patio do castelo
     {
         var patio = new Area(
                 "*Não há sinal de vida por aqui. Mais companheiros podem ser encontrados \n\
@@ -144,7 +176,8 @@ var flag = false;
                 ]
                 );
     }
-//entrada da floresta(batalha)
+
+    //entrada da floresta(batalha)
     {
         var floresta = new Area(
                 "*O silêncio é interrompido com o som inconfundível de criaturas vis e impuras. \n\
@@ -158,7 +191,7 @@ var flag = false;
                 e nesse instante você solta a espada. O Goblin restante então, profere um último grunhido e salta em sua \n\
                 direção apunhalando seu rosto com a pequena lâmina. Ambas criaturas começam a pular sobre seu corpo \n\
                 fincando adagas em seu peito, pernas, olhos, pescoço e você sente a vida se esvaindo de seu corpo. \n\
-                Até que a luz se esvai de seus olhos...", "morte"),
+                Até que a luz se esvai de seus olhos...", "derrota"),
                     new Opcao("2)Atacar com uma estocada", "Você se adianta em direção ao grupo de inimigos e com uma \n\
                 poderosa estocada atinge o peito do Goblin do meio. Ele sorri e você observa então a desproporcionalidade do equipamento das\n\
                 criaturas. A repulsa invade seu olhar ao perceber que aquelas criaturas impuras roubaram todo o possível dos corpos dos soldados \n\
@@ -166,7 +199,7 @@ var flag = false;
                 muito usadas pelos soldados reais. Aproveitando sua falha, o Goblin à direita investe a lâmina de sua adaga em seu pescoço enquanto\n\
                 aquele à sua esquerda corta seu calcanhar direito. Acostumados a inimigos maiores, os Goblins sabem muito bem como derrubar um soldado \n\
                 quando estão em maior número. Cercado de inimigos, você\n\
-                sucumbe ao frio chamado da morte enquanto ouve o mar de guinchos e gargalhadas das criaturas malignas...", "morte"),
+                sucumbe ao frio chamado da morte enquanto ouve o mar de guinchos e gargalhadas das criaturas malignas...", "derrota"),
                     new Opcao("3)Atacar em arco", "Você avança para cima dos Goblins em um ataque repentino, fruto de anos de treinamento. \n\
                 A lâmina rasga o peito do Goblin mais à esquerda, que agoniza e cai de joelhos sem vida. O Goblin à direita tenta evitar o ataque posicionando \n\
                 sua adaga numa tentativa desesperada de interromper o poderoso ataque. Sua lâmina, contudo, atravessa a frágil adaga e separa corpo \n\
@@ -175,7 +208,8 @@ var flag = false;
                 ]
                 );
     }
-//entrada da floresta2(pós batalha)
+
+    //entrada da floresta2(pós batalha)
     {
         var floresta2 = new Area(
                 "*Após ser possível apenas ouvir os passos apressados do Goblin fugitivo, você observa sinais \n\
@@ -188,7 +222,8 @@ var flag = false;
                 ]
                 );
     }
-//clareira
+
+    //clareira
     {
         var clareira = new Area(
                 "*Na clareira, é possível ver um penhasco. A ponte foi destruída, impossibilitando \n\
@@ -205,12 +240,13 @@ var flag = false;
                     new Opcao("2)Olhar penhasco", "Você se aproxima do penhasco e observa a \n\
                     queda íngreme e o vazio escuro que praticamente emana de seu fundo. Perdido em seus \n\
                     pensamentos, você não percebe a instabilidade do terreno. A terra cede e você cai no abismo \n\
-                    da morte, para nunca mais ser visto novamente.", "morte"),
+                    da morte, para nunca mais ser visto novamente.", "derrota"),
                     new Opcao("3)Voltar à floresta", "Você entra pela mata com cuidado...", "floresta2")
                 ]
                 );
     }
-//mata da floresta
+
+    //mata da floresta
     {
         var mata = new Area(
                 "*Adentrando na Floresta você caminha por alguns minutos até que o odor da morte toma \n\
@@ -224,7 +260,8 @@ var flag = false;
                 ]
                 );
     }
-//caverna
+
+    //caverna
     {
         var caverna = new Area(
                 "*A caverna é escura e úmida. Ao adentrar naquele ambiente você sente uma presença \n\
@@ -238,7 +275,8 @@ var flag = false;
                 ]
                 );
     }
-//direita
+
+    //direita
     {
         var direita = new Area(
                 "*O caminho escuro acaba direcionando você para cima, em uma subida suave e \n\
@@ -270,12 +308,13 @@ var flag = false;
                     espada que atravessa sua cabeça, o monstro fica imóvel e a vida sombria se esvai de seus olhos. \n\
                     Você retira a espada, cuja lâmina brilha escarlate graças ao fogo de Dragão e se direciona à \n\
                     Princesa. Com o som da batalha, a Princesa acorda assustada. Seus olhos buscam explicação e \n\
-                    conforto, até que encontram o olhar de seu salvador...", "morte_dragao"),
+                    conforto, até que encontram o olhar de seu salvador...", "vitoria"),
                     new Opcao("2)Voltar para a bifurcação", "Você volta pelo caminho até a bifurcação..", "caverna")
                 ]
                 );
     }
-//esqueda
+
+    //esqueda
     {
         var esquerda = new Area(
                 "*A passagem o leva até uma câmara imensa. O teto é escuro e impossível de se \n\
@@ -301,12 +340,13 @@ var flag = false;
                     seu precioso prêmio. Ele ruge de modo que toda a caverna estremece. Só é possível vê-lo \n\
                     movimentar a cauda e, com o medo e o arrependimento de sua escolha sobre os ombros, você \n\
                     aguarda o golpe de misericórdia. A impotência e o terror dominam seu corpo e no momento do \n\
-                    impacto, seu corpo e o da Princesa unem-se em uma massa indistinguível de carne e ossos.", "morte"),
+                    impacto, seu corpo e o da Princesa unem-se em uma massa indistinguível de carne e ossos.", "derrota"),
                     new Opcao("3)Voltar até a bifurcação", "Você vira para a bifurcação caverna ...", "caverna")
                 ]
                 );
     }
-//começo da batalha
+
+    //começo da batalha
     {
         var batalha1 = new Area(
                 "*A besta infernal deve pagar por toda a destruição causada e sua morte é uma \n\
@@ -321,7 +361,7 @@ var flag = false;
                 [
                     new Opcao("1)Defender com o escudo", "A sala se ilumina com as chamas vermelho-alaranjadas \n\
                     expelidas pelo Dragão. Seu escudo derrete em seu braço e seu corpo, assim como a fraca tocha daquela câmara, queima por um breve \n\
-                    momento e por fim se apaga, devolvendo aquele lugar às trevas.", "morte"),
+                    momento e por fim se apaga, devolvendo aquele lugar às trevas.", "derrota"),
                     new Opcao("2)Pular para o lado", "Você salta para o lado, numa tentativa \n\
                     de escapas das chamas, mas a torrente de fogo acerta sua perna...", "batalha2"),
                     new Opcao("3)Rolar para fernte", "Você, rapidamente, rola em direção ao dragão, \n\
@@ -330,7 +370,8 @@ var flag = false;
                 ]
                 );
     }
-//batalha após queimar a perna
+
+    //batalha após queimar a perna
     {
         var batalha2 = new Area(
                 "*Com a perna queimada, você se mantém em pé com dificuldade, encara o dragão enquanto ele \n\
@@ -342,14 +383,15 @@ var flag = false;
                     new Opcao("1)Atacar a pata do dragão", "Você aguarda o ataque, que vem horizontalmente \n\
                     em sua direção, até que a pata esteja a uma distância que possibilita o golpe certeiro, \n\
                     porém ao desferir o golpe, sua perna falha em manter o apoio e você é arremessado contra \n\
-                    a parede da caverna, num impacto fatal.", "morte"),
+                    a parede da caverna, num impacto fatal.", "derrota"),
                     new Opcao("2)Pular para perto da cabeça do dragão", "Pulando pra frente com dificuldade, \n\
                     você desvia do ataque e sobrevive mais alguns instantes, antes da próxima rajada de fogo \n\
                     que está por vir...", "batalha4")
                 ]
                 );
     }
-//batalha após desviar do primeiro ataque
+
+    //batalha após desviar do primeiro ataque
     {
         var batalha3 = new Area(
                 "*Ali, você percebe a falta de escamas que a fera tem em sua cabeça. Talvez a espada tenha \n\
@@ -364,11 +406,12 @@ var flag = false;
                     Ele abocanha sua espada, levando junto sua mão. Junto com a dor de perder uma das mãos \n\
                     e ao fato de não ter mais uma arma, seu coração sucumbe ao desespero, te deixando \n\
                     totalmente paralisado de medo, tornando-lhe um alvo fácil para a ultima rajada de fogo \n\
-                    do dragão...", "morte")
+                    do dragão...", "derrota")
                 ]
                 );
     }
-//batalha após desviar da patada
+
+    //batalha após desviar da patada
     {
         var batalha4 = new Area(
                 "*Com sua boca encandecendo-se, o dragão se prepara para mais uma rajada de chamas, \n\
@@ -380,33 +423,35 @@ var flag = false;
                     sua perna falha em sustentar seu corpo e te derruba no chão, o que parece uma queda \n\
                     eterna. Você lembra de todos os companheiros que morreram e sua vida passa diante de seus \n\
                     olhos. Quando finalmente encontro o chão frio, a torrente infernal encontra seu corpo \n\
-                    carbonizando-o totalmente...", "morte"),
+                    carbonizando-o totalmente...", "derrota"),
                     new Opcao("2)Lançar espada", "Com toda a força que lhe resta, você joga sua espada em \n\
                     direção à cabeça do mostro acertando em cheio o meio de seus olhos, poucos instantes \n\
                     antes de soltar suas chamas, com a angústia da fera, você tem a oportunidade de finalizar \n\
                     o ataque, terminando de enfiar a espada na cabeça do dragão. Já sem energias você \n\
                     você desmaia na caverna. Ao abrir os olhos você vê a princesa, ajoelhada ao seu lado \n\
-                    chacolhando-o gentilmente para te reanimar...", "morte_dragao")
+                    chacolhando-o gentilmente para te reanimar...", "vitoria")
                 ]
                 );
     }
-//derrota
+
+    //derrota
     {
         var derrota = new Area(
                 "Fim de jogo!",
                 [
-                    new Opcao("1)Recomeçar?", "", "ruaIni")
+                    new Opcao("1)Recomeçar?", "", "refresh")
                 ]
                 );
     }
-//vitoria
+
+    //vitoria
     {
         var vitoria = new Area(
                 "*Juntos, você a Princesa dirigem-se a saída da caverna e às ruínas do Castelo. A Princesa, \n\
                 única sobrevivente da família real, torna-se Rainha daquelas terras e você, seu Chefe da Guarda Real. \n\
                 Também conhecido como o Poderoso Matador de Dragões.<br><br>Parabéns, você terminou o jogo!",
                 [
-                    new Opcao("1)Recomeçar?", "", "ruaIni")
+                    new Opcao("1)Recomeçar?", "", "refresh")
                 ]
                 );
     }
@@ -432,14 +477,12 @@ var flag = false;
     areas['batalha1'] = batalha1;
     areas['batalha2'] = batalha2;
     areas['batalha3'] = batalha3;
-    areas['morte'] = derrota;
-    areas['morte_dragao'] = vitoria;
+    areas['derrota'] = derrota;
+    areas['vitoria'] = vitoria;
 }
 
 //começo do jogo
 {
     salaAtual = 'ruaIni';
-    jogoDiv.writeln("Destruição, fogo e escombros...<br>Memórias perdidas em meio ao \n\
-        despertar pós-batalha. Sua cidade está em ruínas e não há ninguém por perto." + "<br><br>");
     Print(areas[salaAtual]);
 }
