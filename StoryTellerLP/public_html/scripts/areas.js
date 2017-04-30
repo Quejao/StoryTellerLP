@@ -14,7 +14,7 @@ Element.prototype.writeln = function (arg) {
     this.innerHTML += arg;
 }
 
-function setSalas(data){
+function setSalas(data) {
     areas = data;
 }
 
@@ -70,9 +70,11 @@ function Escolha(area, op) {
             document.getElementById('defeat').autoplay = true;
         }
     }
-    for(let p of areas){
-        if(p.nome === salaAtual)
-        Print(p);
+    
+    for (let p of areas) {
+        if (p.nome === salaAtual) {
+            Print(p);
+        }
     }
 }
 
@@ -82,4 +84,4 @@ var strCampo;
 var flag = false;
 
 //criação da lista de areas
-      var areas = [];
+var areas = [];
