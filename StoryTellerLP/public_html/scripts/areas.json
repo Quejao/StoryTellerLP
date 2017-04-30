@@ -1,0 +1,363 @@
+[
+    {
+        "nome": "ruaIni",
+        "descricao": "Destruição, fogo e escombros...<br>Memórias perdidas em meio ao despertar pós-batalha. Sua cidade está em ruínas e não há ninguém por perto. <br><br>*Você acorda desorientado, na rua principal da cidade. Você se levanta do chão com dificuldade. Como cavaleiro que é, você precisa descobrir o que aconteceu. Subindo a rua está o castelo, descendo-a está a floresta.",
+        "opcoes": [
+            {
+                "opcao": "1)Seguir para o Castelo",
+                "resultado": "Você pega sua espada e escudo e direciona-se para o castelo...",
+                "chave": "castelo"
+            },
+            {
+                "opcao": "2)Dirigir-se à floresta",
+                "resultado": "Você pega sua espada e escudo e vai em direção à floresta...",
+                "chave": "floresta"
+            }
+        ]
+    },
+    {
+        "nome": "rua",
+        "descricao": "*Você chega à rua onde despertou. É possível dirigir-se ao Castelo ou à floresta.",
+        "opcoes": [
+            {
+                "opcao": "1)Seguir para o Castelo",
+                "resultado": "Você se direciona para o castelo...",
+                "chave": "castelo"
+            },
+            {
+                "opcao": "2)Dirigir-se à floresta",
+                "resultado": "Você vai em direção à floresta...",
+                "chave": "floresta"
+            }
+        ]
+    },
+    {
+        "nome": "rua2",
+        "descricao": "*Você chega à rua onde despertou. É possível dirigir-se ao Castelo ou à floresta.",
+        "opcoes": [
+            {
+                "opcao": "1)Seguir para o Castelo",
+                "resultado": "Você se direciona para o castelo...",
+                "chave": "castelo"
+            },
+            {
+                "opcao": "2)Dirigir-se à floresta",
+                "resultado": "Você vai em direção à floresta...",
+                "chave": "floresta2"
+            }
+        ]
+    },
+    {
+        "nome": "castelo",
+        "descricao": "*Aproximando-se da fachada do Castelo é possível ver que uma das torres foi completamente destruída e há fumaça escapando pelas fendas visíveis após a destruição.<br>Não há guardas e nenhum ser visível. Olhando ao seu redor, você vê a porta para o hall de entrada e o caminho para o pátio do castelo.",
+        "opcoes": [
+            {
+                "opcao": "1)Ir para o hall",
+                "resultado": "Você passa pela porta destruída e entra pelo hall do castelo...",
+                "chave": "hall"
+            },
+            {
+                "opcao": "2)Ir para o pátio do castelo",
+                "resultado": "Você segue até o pátio do castelo, pelo caminho com escombros...",
+                "chave": "patio"
+            },
+            {
+                "opcao": "3)Volta à rua principal",
+                "resultado": "Você volta pelo caminho até a rua onde acordou...",
+                "chave": "rua"
+            }
+        ]
+    },
+    {
+        "nome": "hall",
+        "descricao": "*O odor da morte é o primeiro a atingir seus sentidos. A visão do ambiente é desoladora. É possível ver alguns de seus companheiros, cavaleiros assim como você, ou o que sobrou de seus corpos...Você percebe que alguns dos corpos são grotescos e monstruosos. A cena acaba por abalar seu espírito por um momento. A sua frente está a porta para a sala do trono, a sua esquerda a escada para a torre de vigia.",
+        "opcoes": [
+            {
+                "opcao": "1)Ir para a sala do trono",
+                "resultado": "Você adentra a sala do trono...",
+                "chave": "trono"
+            },
+            {
+                "opcao": "2)Ir para a torre de vigia",
+                "resultado": "Você sobe as escadas até a torre de vigia...",
+                "chave": "torre"
+            },
+            {
+                "opcao": "3)Volta à entrada do castelo",
+                "resultado": "Você pela porta e vai a entrada do castelo...",
+                "chave": "castelo"
+            }
+        ]
+    },
+    {
+        "nome": "trono",
+        "descricao": "*A primeira visão é do Trono... O brilho escarlate atinge seus olhos graças à luz que entra no ambiente destruído e você observa o semblante vazio de vida do Rei. Os sinais de batalha são menos evidentes aqui. Não há sinal da Princesa nesse cômodo. A fúria domina seus sentimentos.",
+        "opcoes": [
+            {
+                "opcao": "1)Investigar a sala",
+                "resultado": "Ao investigar o falecido Rei, você observa que apesar dos ferimentos superficiais, seu corpo possui grotescas marcas de queimadura. Algo tão potente que foi capaz de derreter sua coroa dourada. Nesse instante, você compreende que isso não poderia ser causada por uma chama normal, mas alguma poderosa magia.",
+                "chave": "trono"
+            },
+            {
+                "opcao": "2)Voltar ao hall",
+                "resultado": "Você se vira e deixa a sala",
+                "chave": "hall"
+            }
+        ]
+    },
+    {
+        "nome": "torre",
+        "descricao": "*O ambiente vazio apenas proporciona uma visão da floresta, cujas árvores também cederam, além de um pouco de fumaça no meio da mata. Não há muito para se encontrar neste local.",
+        "opcoes": [
+            {
+                "opcao": "1)Ir para o hall",
+                "resultado": "Você desce até o hall...",
+                "chave": "hall"
+            },
+            {
+                "opcao": "2)Ir para o pátio",
+                "resultado": "Você desce até o pátio...",
+                "chave": "patio"
+            }
+        ]
+    },
+    {
+        "nome": "patio",
+        "descricao": "*Não há sinal de vida por aqui. Mais companheiros podem ser encontrados e todos sofreram um fim terrível pela expressão em seus rostos. O medo e desespero ainda são visíveis na frieza de seus olhos. Você observa a torre de vigia a uma certa distância.",
+        "opcoes": [
+            {
+                "opcao": "1)Subir para a torre",
+                "resultado": "Você sobe até o topo da torre...",
+                "chave": "torre"
+            },
+            {
+                "opcao": "2)Voltar para a entrada do castelo",
+                "resultado": "Você volta para a fachada do castelo...",
+                "chave": "castelo"
+            }
+        ]
+    },
+    {
+        "nome": "floresta",
+        "descricao": "*Ao entrar na floresta, o silêncio é interrompido com o som inconfundível de criaturas vis e impuras. 3 Goblins se aproximam de você com armas em posição. O mais alto grunhe em uma linguagem incompreensível e você logo percebe que a batalha é iminente. Você decide então que atacar é a melhor estratégia.",
+        "opcoes": [
+            {
+                "opcao": "1)Atacar, em um pulo, de cima para baixo",
+                "resultado": "Você levanta sua espada e desce em um movimento rápido e poderoso dividindo em dois o Goblin posicionado mais à esquerda do grupo. Contudo você percebe que a lâmina acaba ficando presa no corpo sem vida do inimigo. Percebendo sua falha, um dos Goblins corre em sua direção e investe a lâmina da adaga logo abaixo de seu braço direito e nesse instante você solta a espada. O Goblin restante então, profere um último grunhido e salta em sua direção apunhalando seu rosto com a pequena lâmina. Ambas criaturas começam a pular sobre seu corpo fincando adagas em seu peito, pernas, olhos, pescoço e você sente a vida se esvaindo de seu corpo. Até que a luz se esvai de seus olhos...",
+                "chave": "derrota"
+            },
+            {
+                "opcao": "2)Atacar com uma estocada",
+                "resultado": "Você se adianta em direção ao grupo de inimigos e com uma poderosa estocada atinge o peito do Goblin do meio. Ele sorri e você observa então a desproporcionalidade do equipamento das criaturas. A repulsa invade seu olhar ao perceber que aquelas criaturas impuras roubaram todo o possível dos corpos dos soldados do Castelo. Ainda que muito desproporcional, o Goblin do meio, equipava-se com uma das cotas de malha revestidas de aço, muito usadas pelos soldados reais. Aproveitando sua falha, o Goblin à direita investe a lâmina de sua adaga em seu pescoço enquanto aquele à sua esquerda corta seu calcanhar direito. Acostumados a inimigos maiores, os Goblins sabem muito bem como derrubar um soldado quando estão em maior número. Cercado de inimigos, você sucumbe ao frio chamado da morte enquanto ouve o mar de guinchos e gargalhadas das criaturas malignas...",
+                "chave": "derrota"
+            },
+            {
+                "opcao": "3)Atacar em arco",
+                "resultado": "Você avança para cima dos Goblins em um ataque repentino, fruto de anos de treinamento. A lâmina rasga o peito do Goblin mais à esquerda, que agoniza e cai de joelhos sem vida. O Goblin à direita tenta evitar o ataque posicionando sua adaga numa tentativa desesperada de interromper o poderoso ataque. Sua lâmina, contudo, atravessa a frágil adaga e separa corpo de ca- beça da vil criatura. O inimigo restante consegue saltar para trás no momento do ataque apenas para ver seus aliados serem destruídos em apenas um golpe e com desespero, foge floresta adentro...",
+                "chave": "floresta2"
+            }
+        ]
+    },
+    {
+        "nome": "floresta2",
+        "descricao": "*Após ser possível apenas ouvir os passos apressados do Goblin fugitivo, você observa sinais incomuns que indicam que algo atravessou a floresta naquela direção. Além disso, é possível ver que a estrada principal apresenta rastros interessantes ao longo de sua extensão visível.",
+        "opcoes": [
+            {
+                "opcao": "1)Seguir pela estrada",
+                "resultado": "Continuando pela estrada, você segue até chegar a uma clareira...",
+                "chave": "clareira"
+            },
+            {
+                "opcao": "2)Adentrar a mata",
+                "resultado": "Você entra pela mata com cuidado...",
+                "chave": "mata"
+            }
+        ]
+    },
+    {
+        "nome": "clareira",
+        "descricao": "*Na clareira, é possível ver um penhasco. A ponte foi destruída, impossibilitando a passagem. Seus instintos são fortes em relação àquele local. É possível sentir que o penhasco ou talvez a ponte talvez possam prover pistas sobre o que atacou o Castelo e quais inimigos você poderá encontrar.",
+        "opcoes": [
+            {
+                "opcao": "1)Investigar a Ponte",
+                "resultado": "Você se aproxima das madeiras que seguravam a ponte...<br>Você se aproxima da ponte e recorda-se de que um antigo Mago, implacável, havia auxiliado o Rei na construção daquela ponte, que proveu o caminho mais rápido para as terras do reino vizinho em caso de perigo. Assim como fez com o castelo, o Mago alertou a todos que apenas uma magia antiga e digna de um ser ou criatura muito poderoso poderia destruir aquilo que ele havia criado.",
+                "chave": "clareira"
+            },
+            {
+                "opcao": "2)Olhar penhasco",
+                "resultado": "Você se aproxima do penhasco e observa a queda íngreme e o vazio escuro que praticamente emana de seu fundo. Perdido em seus pensamentos, você não percebe a instabilidade do terreno. A terra cede e você cai no abismo da morte, para nunca mais ser visto novamente.",
+                "chave": "derrota"
+            },
+            {
+                "opcao": "3)Voltar à floresta",
+                "resultado": "Você entra pela mata com cuidado...",
+                "chave": "floresta2"
+            }
+        ]
+    },
+    {
+        "nome": "mata",
+        "descricao": "*Adentrando na Floresta você caminha por alguns minutos até que o odor da morte toma seus sentidos novamente. Dezenas de corpos, alguns sem vida há muitos anos e outros cujo terror e desespero no olhar ainda dão a sensação de que acabaram de perder o brilho da vida, estão espalhados e desfigurados próximos a entrada de uma caverna. Ao se aproximar da caverna é possível ouvir pequenos barulhos e o cheiro de sangue e putridão aumentam cada vez mais.",
+        "opcoes": [
+            {
+                "opcao": "1)Entrar na caverna",
+                "resultado": "Você adentra a caverna...",
+                "chave": "caverna"
+            },
+            {
+                "opcao": "2)Voltar mata a fora",
+                "resultado": "Você se vira e volta para a floresta...",
+                "chave": "floresta2"
+            }
+        ]
+    },
+    {
+        "nome": "caverna",
+        "descricao": "*A caverna é escura e úmida. Ao adentrar naquele ambiente você sente uma presença inigualável. Logo observa que a caverna se divide em uma bifurcação. O caminho da direita aparenta ser mais escuro e sombrio. A passagem para a esquerda parece possuir uma precária iluminação ao fundo. Seu instinto está em chamas e sua razão deve prevalescer nesta descisão.",
+        "opcoes": [
+            {
+                "opcao": "1)Seguir pela direita",
+                "resultado": "Você segue pelo caminho da direita...",
+                "chave": "direita"
+            },
+            {
+                "opcao": "2)Seguir pela esquerda",
+                "resultado": "Você segue o caminha da esquerda...",
+                "chave": "esquerda"
+            },
+            {
+                "opcao": "3)Sair da caverna",
+                "resultado": "Você vira para sair da caverna...",
+                "chave": "mata"
+            }
+        ]
+    },
+    {
+        "nome": "direita",
+        "descricao": "*O caminho escuro acaba direcionando você para cima, em uma subida suave e sombria. Você observa que está em um nível relativamente mais alto naquela câmara e daquele local consegue observar uma pequena luz fraca de uma tocha no fundo daquele local. Sobre algum tipo de altar de sacrifícios você vê uma nova esperança. A Princesa está aparentemente desmaiada sobre a mesa rochosa como que a espera de alguém bravo e poderoso o suficiente para salvá-la. Abaixo do local onde você está, uma gigantesca criatura respira pesadamente em um sono visivelmente profundo. Seu corpo robusto se alonga em uma cauda enorme e coberta de adornos que mais se parecem com espinhos. Seu corpo escamado brilha com a tremeluzente iluminação da tocha. Grandes asas são projetadas de suas costas e as patas imensas terminam em longas garras mais afiadas que qualquer lâmina feita pelo homem. A cabeça do monstro está inclinada sobre as patas e seus olhos permanecem ocultos sobre as pálpebras. Um ataque aério pode ser muito eficaz, porém, se errá-lo dessa altura, pode significar uma grande queda que dificultaria ainda uma batalha com a criatura",
+        "opcoes": [
+            {
+                "opcao": "1)Ataque aéro",
+                "resultado": "Todo o ódio, fúria e tristeza pelos companheiros perdidos, Rei assassinado e Reino desolado caem sobre suas costas. Você entende a necessidade daquele ato e vê que aquela criatura causou muito mal não só a você, mas também a centenas de pessoas. O Dragão precisa ser eliminado. Você empunha sua espada e compreende seu peso de uma maneira que nunca compreendera antes. Olhando para aquela arma você pede um sinal aos deuses para ter certeza de que aquela era sua missão e se teria forças para lutar até o fim. Por um breve momento, a lâmina brilha de maneira surpreendente. Você não tem certeza se foi apenas um reflexo da luz da tocha, mas sente que aquele é o momento. Com a espada em mãos você finalmente salta daquela superfície mais alta. Tudo que se ouve é um som incomparável, algo como um urro violento de dor. Sua espada atravessa a cabeça do Dragão e ele urra de dor. Preso ao chão a besta tenta se mover, mas com um último brilho de chamas de sua boca cerrada pela espada que atravessa sua cabeça, o monstro fica imóvel e a vida sombria se esvai de seus olhos. Você retira a espada, cuja lâmina brilha escarlate graças ao fogo de Dragão e se direciona à Princesa. Com o som da batalha, a Princesa acorda assustada. Seus olhos buscam explicação e conforto, até que encontram o olhar de seu salvador...",
+                "chave": "vitoria"
+            },
+            {
+                "opcao": "2)Voltar para a bifurcação",
+                "resultado": "Você volta pelo caminho até a bifurcação..",
+                "chave": "caverna"
+            }
+        ]
+    },
+    {
+        "nome": "esquerda",
+        "descricao": "*A passagem o leva até uma câmara imensa. O teto é escuro e impossível de se enxergar. Luz se esgueira de uma pequena tocha no fundo da caverna e seus olhos brilham ao encontrarem a Princesa, desvanecida, sobre algo que aparenta ser uma mesa feita de rocha, algo como um altar de sacrifícios. Contudo, a felicidade dura poucos instantes... Entre a Princesa e você é possível ver uma criatura dantesca... Seu corpo robusto se alonga em uma cauda enorme e coberta de adornos que mais se parecem com espinhos. Seu corpo escamado brilha com a luz tremeluzente da tocha. Grandes asas são projetadas de suas costas e as patas imensas terminam em longas garras mais afiadas que qualquer lâmina feita pelo homem. A cabeça do monstro está inclinada sobre as patas e seus olhos permanecem fechados enquanto uma pesada respiração enche a sala com o terror daquela visão. O Dragão permanece em seu sono e você precisa decidir o que fazer antes que ele desperte. Você pode atacá-lo enquanto dorme num ataque surpresa, pode espreitar-se e tentar resgatar a Princesa furtivamente ou pode deixar aquele local e voltar para o cômodo anterior da caverna.",
+        "opcoes": [
+            {
+                "opcao": "1)Atacar o dragão",
+                "resultado": "Você segura firmemente sua espada e se prepara para atacar...",
+                "chave": "batalha1"
+            },
+            {
+                "opcao": "2)Espreitar-se até a princesa",
+                "resultado": "Você se aproxima do corpo da criatura gigantesca e com passos cuidadosos você consegue se aproximar da Princesa. Ao chegar ao seu alcance, você a segura e tenta erguê-la nos seus ombros para que possa carregá-la para forada caverna. Nesse momento, o Dragão desperta e você está absolutamente indefeso carregando a jovem realeza. A criatura observa com desprezo sua tentativa pífia de recuperar seu precioso prêmio. Ele ruge de modo que toda a caverna estremece. Só é possível vê-lo movimentar a cauda e, com o medo e o arrependimento de sua escolha sobre os ombros, você aguarda o golpe de misericórdia. A impotência e o terror dominam seu corpo e no momento do impacto, seu corpo e o da Princesa unem-se em uma massa indistinguível de carne e ossos.",
+                "chave": "derrota"
+            },
+            {
+                "opcao": "3)Voltar até a bifurcação",
+                "resultado": "Você vira para a bifurcação caverna ...",
+                "chave": "caverna"
+            }
+        ]
+    },
+    {
+        "nome": "batalha1",
+        "descricao": "*A besta infernal deve pagar por toda a destruição causada e sua morte é uma moeda válida. Entendendo seu dever de vingar a morte do Rei e de seus companheiros, você empunha sua espada e avança para um ataque mortal e definitivo na garganta do Dragão e com toda sua força desce a lâmina em seu pescoço. A espada acerta o Dragão apenas para ser repelida pelas poderosas escamas do Dragão. Este desperta de seu sono, incomodado por uma ínfima criatura. O monstro levanta seu corpanzil imenso e seu olhar sombrio encontra o causador do incômodo. A boca do dragão se incandesce pronta para cuspir uma rajada de fogo. Você recua lentamente. Seu instinto de batalha se aflora. O tempo para e você analisa as possibilidades para derrotar a besta",
+        "opcoes": [
+            {
+                "opcao": "1)Defender com o escudo",
+                "resultado": "A sala se ilumina com as chamas vermelho-alaranjadas expelidas pelo Dragão. Seu escudo derrete em seu braço e seu corpo, assim como a fraca tocha daquela câmara, queima por um breve momento e por fim se apaga, devolvendo aquele lugar às trevas.",
+                "chave": "derrota"
+            },
+            {
+                "opcao": "2)Pular para o lado",
+                "resultado": "Você salta para o lado, numa tentativa de escapas das chamas, mas a torrente de fogo acerta sua perna...",
+                "chave": "batalha2"
+            },
+            {
+                "opcao": "3)Rolar para fernte",
+                "resultado": "Você, rapidamente, rola em direção ao dragão, escapando por muito pouco das chamas, que iluminam todo o interior da caverna, ficando a baixo da cabeça da fera...",
+                "chave": "batalha3"
+            }
+        ]
+    },
+    {
+        "nome": "batalha2",
+        "descricao": "*Com a perna queimada, você se mantém em pé com dificuldade, encara o dragão enquanto ele prepara o próximo golpe. Ao levantar uma de suas grotescas patas, você começa a analisar as possibilidades de derrotar a imensurável fera. Com sua percepção, você vê uma falha na pata da besta, onde faltam escamas. É possivel ver o mesmo tipo de falha no topo de sua cabeça.",
+        "opcoes": [
+            {
+                "opcao": "1)Atacar a pata do dragão",
+                "resultado": "Você aguarda o ataque, que vem horizontalmente em sua direção, até que a pata esteja a uma distância que possibilita o golpe certeiro, porém ao desferir o golpe, sua perna falha em manter o apoio e você é arremessado contra a parede da caverna, num impacto fatal.",
+                "chave": "derrota"
+            },
+            {
+                "opcao": "2)Pular para perto da cabeça do dragão",
+                "resultado": "Pulando pra frente com dificuldade, você desvia do ataque e sobrevive mais alguns instantes, antes da próxima rajada de fogo que está por vir...",
+                "chave": "batalha4"
+            }
+        ]
+    },
+    {
+        "nome": "batalha3",
+        "descricao": "*Ali, você percebe a falta de escamas que a fera tem em sua cabeça. Talvez a espada tenha algum efeito nesse lugar.",
+        "opcoes": [
+            {
+                "opcao": "1)Estocada para cima",
+                "resultado": "Você atravessa a cabeçorra da fera com sua espada. O sangue escarlate jorra da ferida enquando o dragão solta um urro de dor e agônia, seu ultimo ato antes de cair sem vida. Você corre em direção a princesa, ainda adormecida, para finalmente tira-la da escurição e putridão dessa caverna...",
+                "chave": "vitoria"
+            },
+            {
+                "opcao": "2)Corte horizontal para cima",
+                "resultado": "Ao preparar o golpe, você vacila por um momento. Aquele momento foi suficiente para o dragão se preparar para o seu golpe. Ele abocanha sua espada, levando junto sua mão. Junto com a dor de perder uma das mãos e ao fato de não ter mais uma arma, seu coração sucumbe ao desespero, te deixando totalmente paralisado de medo, tornando-lhe um alvo fácil para a ultima rajada de fogo do dragão...",
+                "chave": "derrota"
+            }
+        ]
+    },
+    {
+        "nome": "batalha4",
+        "descricao": "*Com sua boca encandecendo-se, o dragão se prepara para mais uma rajada de chamas, abaixando sua cabeça próxima ao chão. Você está a uma distância bem próxima a cabeça da fera, porém sua perna queimada dificultará um próximo ataque. Você pensa em arremessar sua espada, mas se isso falhar, você perderá sua arma.",
+        "opcoes": [
+            {
+                "opcao": "1)Atacar a cabeça",
+                "resultado": "Você vai em direção ao dragão, mas no segundo passo sua perna falha em sustentar seu corpo e te derruba no chão, o que parece uma queda eterna. Você lembra de todos os companheiros que morreram e sua vida passa diante de seus olhos. Quando finalmente encontro o chão frio, a torrente infernal encontra seu corpo carbonizando-o totalmente...",
+                "chave": "derrota"
+            },
+            {
+                "opcao": "2)Lançar espada",
+                "resultado": "Com toda a força que lhe resta, você joga sua espada em direção à cabeça do mostro acertando em cheio o meio de seus olhos, poucos instantes antes de soltar suas chamas, com a angústia da fera, você tem a oportunidade de finalizar o ataque, terminando de enfiar a espada na cabeça do dragão. Já sem energias você você desmaia na caverna. Ao abrir os olhos você vê a princesa, ajoelhada ao seu lado chacolhando-o gentilmente para te reanimar...",
+                "chave": "vitoria"
+            }
+        ]
+    },
+    {
+        "nome": "derrota",
+        "descricao": "Fim de jogo!",
+        "opcoes": [
+            {
+                "opcao": "1)Recomeçar?",
+                "resultado": "",
+                "chave": "refresh"
+            }
+        ]
+    },
+    {
+        "nome": "vitoria",
+        "descricao": "*Juntos, você a Princesa dirigem-se a saída da caverna e às ruínas do Castelo. A Princesa, única sobrevivente da família real, torna-se Rainha daquelas terras e você, seu Chefe da Guarda Real. Também conhecido como o Poderoso Matador de Dragões.<br><br>Parabéns, você terminou o jogo!",
+        "opcoes": [
+            {
+                "opcao": "1)Recomeçar?",
+                "resultado": "",
+                "chave": "refresh"
+            }
+        ]
+    }
+]

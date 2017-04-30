@@ -400,7 +400,7 @@ var flag = false;
                     new Opcao("1)Estocada para cima", "Você atravessa a cabeçorra da fera com sua espada. \n\
                     O sangue escarlate jorra da ferida enquando o dragão solta um urro de dor e agônia, seu \n\
                     ultimo ato antes de cair sem vida. Você corre em direção a princesa, ainda adormecida, \n\
-                    para finalmente tira-la da escurição e putridão dessa caverna...", "morte_dragao"),
+                    para finalmente tira-la da escurição e putridão dessa caverna...", "vitoria"),
                     new Opcao("2)Corte horizontal para cima", "Ao preparar o golpe, você vacila por um \n\
                     momento. Aquele momento foi suficiente para o dragão se preparar para o seu golpe. \n\
                     Ele abocanha sua espada, levando junto sua mão. Junto com a dor de perder uma das mãos \n\
@@ -477,6 +477,7 @@ var flag = false;
     areas['batalha1'] = batalha1;
     areas['batalha2'] = batalha2;
     areas['batalha3'] = batalha3;
+    areas['batalha4'] = batalha4;
     areas['derrota'] = derrota;
     areas['vitoria'] = vitoria;
 }
