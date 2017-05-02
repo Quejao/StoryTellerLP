@@ -15,31 +15,31 @@ Element.prototype.writeln = function (arg) {
 }
 
 function printGraph() {
-    graphDiv.writeln("<br><br>digraph g { <br>graph [<br>rankdir = \"LR\<br>];<br>node [<br>fontsize = \"16\"<br>shape = \"ellipse\"<br>];<br>edge [<br>];<br>");
+    var strGraph = "\n\ndigraph g { \ngraph [\nrankdir = \"LR\"\n];\nnode [\nfontsize = \"16\"\nshape = \"ellipse\"\n];\nedge [\n];\n";
     var i = 0;
     var j;
     var k;
     for (let p of areas) {
-        graphDiv.writeln("\"node" + i + "\"[<br>");
-        graphDiv.writeln("label = \" \<f0\> " + p.nome + " | <f1>");
+        strGraph += "\"node" + i + "\"[\n";
+        strGraph += "label = \" <f0> " + p.nome + " | <f1>";
         j = 1;
-        while (j <= 7) {
-            graphDiv.writeln(p.descricao[j]);
+        while (j <= 10) {
+            strGraph += p.descricao[j];
             j++;
         }
-        graphDiv.writeln("... ");
+        strGraph += "... ";
         k = 2;
         for (let d of p.opcoes) {
-            graphDiv.writeln("| <f" + k + "> ");
+            strGraph += "| <f" + k + "> ";
             j = 2;
-            while (j <= 8) {
-                graphDiv.writeln(d.opcao[j]);
+            while (j <= 11) {
+                strGraph += d.opcao[j];
                 j++;
             }
-            graphDiv.writeln("... ");
+            strGraph += "... ";
             k++;
         }
-        graphDiv.writeln("\"<br> shape = \"record\"<br>];<br>");
+        strGraph += "\"\n shape = \"record\"\n];\n";
         i++;
     }
     i = 0;
@@ -49,11 +49,11 @@ function printGraph() {
     for (let p1 of areas) {
         j = 0;
         for (let p2 of areas) {
-            k = 0;
+            k = 2;
             for (let d1 of p1.opcoes) {
                 if (d1.chave === p2.nome) {
-                    graphDiv.writeln("\"node" + i + "\":f" + k + " -> \"node" + j + "\":f0[<br>");
-                    graphDiv.writeln("id = " + id + "<br>];<br>");
+                    strGraph += "\"node" + i + "\":f" + k + " -> \"node" + j + "\":f0[\n";
+                    strGraph += "id = " + id + "\n];\n";
                     id++;
                 }
                 k++;
@@ -62,7 +62,8 @@ function printGraph() {
         }
         i++;
     }
-    graphDiv.writeln("}");
+    strGraph += "}";
+    console.log(strGraph);
 }
 
 function setSalas(data) {
@@ -103,7 +104,6 @@ function Escolha(area, op) {
     }
     jogoDiv.writeln("<br>" + area.opcoes[op].resultado + "<br><br>");
     salaAtual = area.opcoes[op].chave;
-    console.log(salaAtual);
     //controle das musicas
     {
         if (salaAtual === 'esquerda') {
@@ -120,6 +120,7 @@ function Escolha(area, op) {
             document.getElementById('background').muted = true;
             document.getElementById('battle').muted = true;
             document.getElementById('defeat').autoplay = true;
+            printGraph();
         }
     }
 
@@ -131,7 +132,6 @@ function Escolha(area, op) {
 }
 
 var jogoDiv = document.getElementById('jogo');
-var graphDiv = document.getElementById('graph');
 var k = 1;
 var strCampo;
 var flag = false;

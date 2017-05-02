@@ -1,7 +1,7 @@
 data = [
     {
         nome: "ruaIni",
-        descricao: "Destruição, fogo e escombros...<br>Memórias perdidas em meio ao despertar pós-batalha. Sua cidade está em ruínas e não há ninguém por perto. <br><br>*Você acorda desorientado, na rua principal da cidade. Você se levanta do chão com dificuldade. Como cavaleiro que é, você precisa descobrir o que aconteceu. Subindo a rua está o castelo, descendo-a está a floresta.",
+        descricao: " Destruição, fogo e escombros...<br>Memórias perdidas em meio ao despertar pós-batalha. Sua cidade está em ruínas e não há ninguém por perto. <br><br>*Você acorda desorientado, na rua principal da cidade. Você se levanta do chão com dificuldade. Como cavaleiro que é, você precisa descobrir o que aconteceu. Subindo a rua está o castelo, descendo-a está a floresta.",
         opcoes: [
             {
                 opcao: "1)Seguir para o Castelo",
@@ -28,22 +28,6 @@ data = [
                 opcao: "2)Dirigir-se à floresta",
                 resultado: "Você vai em direção à floresta...",
                 chave: "floresta"
-            }
-        ]
-    },
-    {
-        nome: "rua2",
-        descricao: "*Você chega à rua onde despertou. É possível dirigir-se ao Castelo ou à floresta.",
-        opcoes: [
-            {
-                opcao: "1)Seguir para o Castelo",
-                resultado: "Você se direciona para o castelo...",
-                chave: "castelo"
-            },
-            {
-                opcao: "2)Dirigir-se à floresta",
-                resultado: "Você vai em direção à floresta...",
-                chave: "floresta2"
             }
         ]
     },
