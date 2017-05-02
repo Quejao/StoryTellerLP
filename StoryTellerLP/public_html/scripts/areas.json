@@ -91,7 +91,7 @@ data = [
     },
     {
         nome: "torre",
-        descricao: "*O ambiente vazio apenas proporciona uma visão da floresta, cujas árvores também cederam, além de um pouco de fumaça no meio da mata. Não há muito para se encontrar neste local.",
+        descricao: "*O ambiente vazio e destruído da torre apenas proporciona uma visão da floresta, cujas árvores também cederam, além de um pouco de fumaça no meio da mata. Não há muito para se encontrar neste local.",
         opcoes: [
             {
                 opcao: "1)Ir para o hall",
@@ -102,6 +102,11 @@ data = [
                 opcao: "2)Ir para o pátio",
                 resultado: "Você desce até o pátio...",
                 chave: "patio"
+            },
+            {
+                opcao: "3)Verificar destroços",
+                resultado: "Ao se aproximar da beirada para ver a estrutura destruída, você sente a torre tremer, indicando que iria desmoronar a qualquer momento. No mesmo instante você desce as escadas correndo, mmas sua velocidade não é suficiente e os escombros desmoronam em cima do seu corpo...",
+                chave: "derrota"
             }
         ]
     },

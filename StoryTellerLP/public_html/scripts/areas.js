@@ -15,12 +15,12 @@ Element.prototype.writeln = function (arg) {
 }
 
 function printGraph() {
-    var strGraph = "\n\ndigraph g { \ngraph [\nrankdir = \"LR\"\n];\nnode [\nfontsize = \"16\"\nshape = \"ellipse\"\n];\nedge [\n];\n";
+    var strGraph = "digraph g { \ngraph [\nrankdir = \"LR\"\n];\nnode [\nfontsize = \"16\"\nshape = \"ellipse\"\n];\nedge [\n];\n";
     var i = 0;
     var j;
     var k;
     for (let p of areas) {
-        strGraph += "\"node" + i + "\"[\n";
+        strGraph += "\"node" + i + "\" [\n";
         strGraph += "label = \" <f0> " + p.nome + " | <f1>";
         j = 1;
         while (j <= 10) {
@@ -36,10 +36,10 @@ function printGraph() {
                 strGraph += d.opcao[j];
                 j++;
             }
-            strGraph += "... ";
+            strGraph += "...";
             k++;
         }
-        strGraph += "\"\n shape = \"record\"\n];\n";
+        strGraph += "\"\nshape = \"record\"\n];\n";
         i++;
     }
     i = 0;
@@ -52,7 +52,7 @@ function printGraph() {
             k = 2;
             for (let d1 of p1.opcoes) {
                 if (d1.chave === p2.nome) {
-                    strGraph += "\"node" + i + "\":f" + k + " -> \"node" + j + "\":f0[\n";
+                    strGraph += "\"node" + i + "\":f" + k + " -> \"node" + j + "\":f0 [\n";
                     strGraph += "id = " + id + "\n];\n";
                     id++;
                 }
@@ -106,6 +106,14 @@ function Escolha(area, op) {
     salaAtual = area.opcoes[op].chave;
     //controle das musicas
     {
+        if (salaAtual === 'floresta') {
+            document.getElementById('background').muted = true;
+            document.getElementById('battle1').autoplay = true;
+        }
+        if (salaAtual === 'floresta2') {
+            document.getElementById('background').muted = false;
+            document.getElementById('battle1').muted = true;
+        }
         if (salaAtual === 'esquerda') {
             document.getElementById('background').muted = true;
             document.getElementById('battle').autoplay = true;
@@ -120,6 +128,7 @@ function Escolha(area, op) {
             document.getElementById('background').muted = true;
             document.getElementById('battle').muted = true;
             document.getElementById('defeat').autoplay = true;
+            document.getElementById('battle1').muted = true;
             printGraph();
         }
     }
