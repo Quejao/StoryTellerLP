@@ -70,7 +70,13 @@ data = [
                 opcao: "3)Volta à entrada do castelo",
                 resultado: "Você pela porta e vai a entrada do castelo...",
                 chave: "castelo"
+            },
+            {
+                opcao: "4)Volta à rua",
+                resultado: "teste...",
+                chave: "ruaIni"
             }
+            
         ]
     },
     {
@@ -264,7 +270,7 @@ data = [
         opcoes: [
             {
                 opcao: "1)Defender com o escudo",
-                resultado: "A sala se ilumina com as chamas vermelho-alaranjadas expelidas pelo Dragão. Seu escudo derrete em seu braço e seu corpo, assim como a fraca tocha daquela câmara, queima por um breve momento e por fim se apaga, devolvendo aquele lugar às trevas.",
+                resultado: "A sala se ilumina com as chamas vermelho-alaranjadas expelidas pelo Dragão. Seu escudo derrete em seu braço com a força da torrente de chamas e seu corpo, assim como a fraca tocha daquela câmara, queima por um breve momento e por fim se apaga, devolvendo aquele lugar às trevas.",
                 chave: "derrota"
             },
             {
@@ -329,7 +335,7 @@ data = [
     },
     {
         nome: "derrota",
-        descricao: "Fim de jogo!",
+        descricao: " Você morreu...",
         opcoes: [
             {
                 opcao: "1)Recomeçar?",

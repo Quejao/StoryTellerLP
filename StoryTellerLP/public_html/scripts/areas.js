@@ -143,7 +143,6 @@ function Escolha(area, op) {
 var jogoDiv = document.getElementById('jogo');
 var k = 1;
 var strCampo;
-var flag = false;
 
 //criação da lista de areas
 var areas = [];
